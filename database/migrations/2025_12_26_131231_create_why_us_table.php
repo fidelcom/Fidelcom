@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('why_us', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
+            $table->string('subtitle');
+            $table->text('desc');
             $table->timestamps();
         });
     }

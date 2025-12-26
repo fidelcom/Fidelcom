@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('processes', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
+            $table->text('desc');
+            $table->string('image');
             $table->timestamps();
         });
     }

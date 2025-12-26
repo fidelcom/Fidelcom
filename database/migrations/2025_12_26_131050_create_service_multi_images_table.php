@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('service_multi_images', function (Blueprint $table) {
             $table->id();
+            $table->foreignIdFor(\App\Models\Service::class)->constrained('services')->onDelete('cascade');
+            $table->string('image');
             $table->timestamps();
         });
     }

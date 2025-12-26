@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('project_multi_images', function (Blueprint $table) {
             $table->id();
+            $table->foreignIdFor(\App\Models\Project::class)->constrained('projects')->onDelete('cascade');
+            $table->string('image');
             $table->timestamps();
         });
     }
