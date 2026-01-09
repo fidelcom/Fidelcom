@@ -19,8 +19,10 @@ return new class extends Migration
             $table->string('client')->nullable();
             $table->string('year')->nullable();
             $table->string('location')->nullable();
-            $table->text('long_desc');
+            $table->text('long_desc')->nullable();
             $table->string('image');
+            $table->string('url')->nullable();
+            $table->string('tag')->nullable();
             $table->timestamps();
         });
     }

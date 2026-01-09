@@ -11,16 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('get_in_touches', function (Blueprint $table) {
+        Schema::create('specializations', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('email');
-            $table->string('phone');
-            $table->string('subject');
-            $table->string('budget')->nullable();
-            $table->string('image')->nullable();
-            $table->text('message');
-            $table->boolean('status');
+            $table->text('description');
+            $table->integer('projects_count')->default(0);
+            $table->string('logo')->nullable();
             $table->timestamps();
         });
     }
@@ -30,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('get_in_touches');
+        Schema::dropIfExists('specializations');
     }
 };
