@@ -390,20 +390,37 @@
                         <div class="services-items">
                             <div class="service-item scroll-animation" data-animation="fade_from_bottom">
                                 <i class="las la-bezier-curve"></i>
-                                <h2>Website Design</h2>
-                                <p>I created digital products with unique ideas use Figma & Framer</p>
+                                <h2>Backend Engineering</h2>
+                                <p>I design and build secure, scalable backend systems using Laravel, Node.js, and RESTful APIs,
+                                    with caching, queues, and multi-tenant architecture in mind.</p>
                                 <span class="projects">24 Projects</span>
                             </div>
                             <div class="service-item scroll-animation" data-animation="fade_from_bottom">
                                 <i class="las la-code"></i>
-                                <h2>Development</h2>
-                                <p>I build website go live with Framer, Webflow or WordPress</p>
+                                <h2>Frontend Development</h2>
+                                <p>I craft responsive, high-performance interfaces using Vue.js 3, React, Tailwind CSS, and modern
+                                    tooling like Vite and Webpack.</p>
                                 <span class="projects">126 Projects</span>
                             </div>
                             <div class="service-item scroll-animation" data-animation="fade_from_bottom">
                                 <i class="las la-bezier-curve"></i>
-                                <h2>SEO/Marketing</h2>
-                                <p>Increase the traffic for your website with SEO optimized</p>
+                                <h2>Database & System Design</h2>
+                                <p>I model and optimize databases using MySQL, PostgreSQL, MongoDB, and Redis, focusing on performance,
+                                    reliability, and scalability.</p>
+                                <span class="projects">8 Projects</span>
+                            </div>
+                            <div class="service-item scroll-animation" data-animation="fade_from_bottom">
+                                <i class="las la-bezier-curve"></i>
+                                <h2>DevOps & Deployment</h2>
+                                <p>I ship production-ready applications using Docker, Git, CI/CD, and Nginx, ensuring smooth deployments
+                                    and reliable environments.</p>
+                                <span class="projects">8 Projects</span>
+                            </div>
+                            <div class="service-item scroll-animation" data-animation="fade_from_bottom">
+                                <i class="las la-bezier-curve"></i>
+                                <h2>SaaS & Architecture</h2>
+                                <p>I build multi-tenant SaaS platforms with clean architecture, applying SOLID principles and proven design
+                                    patterns for long-term maintainability.</p>
                                 <span class="projects">8 Projects</span>
                             </div>
                         </div>
@@ -427,57 +444,93 @@
                             <div class="col-md-3 scroll-animation" data-animation="fade_from_left">
                                 <div class="skill">
                                     <div class="skill-inner">
-                                        <img src="assets/images/figma.png" alt="Figma">
+                                        <img src="{{ asset('assets/images/flutter.png') }}" height="49" alt="Flutter">
                                         <h1 class="percent">92%</h1>
                                     </div>
-                                    <p class="name">Figma</p>
+                                    <p class="name">Flutter</p>
                                 </div>
                             </div>
-                            <div class="col-md-3 scroll-animation" data-animation="fade_from_bottom">
-                                <div class="skill">
-                                    <div class="skill-inner">
-                                        <img src="assets/images/framer.png" alt="Framer">
-                                        <h1 class="percent">85%</h1>
-                                    </div>
-                                    <p class="name">Framer</p>
-                                </div>
-                            </div>
+{{--                            <div class="col-md-3 scroll-animation" data-animation="fade_from_bottom">--}}
+{{--                                <div class="skill">--}}
+{{--                                    <div class="skill-inner">--}}
+{{--                                        <img src="assets/images/framer.png" alt="Framer">--}}
+{{--                                        <h1 class="percent">85%</h1>--}}
+{{--                                    </div>--}}
+{{--                                    <p class="name">Laravel</p>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
                             <div class="col-md-3 scroll-animation" data-animation="fade_from_top">
                                 <div class="skill">
                                     <div class="skill-inner">
-                                        <img src="assets/images/webflow.png" alt="Webflow">
+                                        <img src="{{ asset('assets/images/js.webp') }}" height="49" alt="Webflow">
                                         <h1 class="percent">80%</h1>
                                     </div>
-                                    <p class="name">Webflow</p>
+                                    <p class="name">JavaScript</p>
                                 </div>
                             </div>
                             <div class="col-md-3 scroll-animation" data-animation="fade_from_right">
                                 <div class="skill">
                                     <div class="skill-inner">
-                                        <img src="assets/images/react.png" alt="React">
+                                        <img src="{{ asset('assets/images/react.png') }}" alt="React">
                                         <h1 class="percent">90%</h1>
                                     </div>
                                     <p class="name">React</p>
                                 </div>
                             </div>
-                            <div class="col-md-3 scroll-animation" data-animation="fade_from_left">
+                            <div class="col-md-3 scroll-animation" data-animation="fade_from_bottom">
                                 <div class="skill">
                                     <div class="skill-inner">
-                                        <img src="assets/images/wordpress.png" alt="WordPress">
-                                        <h1 class="percent">86%</h1>
+                                        <img src="{{ asset('assets/images/Node.js_logo.svg') }}" height="49" alt="Laravel/PHP">
+                                        <h1 class="percent">70%</h1>
                                     </div>
-                                    <p class="name">WordPress</p>
+                                    <p class="name">Node Js</p>
                                 </div>
                             </div>
                             <div class="col-md-3 scroll-animation" data-animation="fade_from_bottom">
                                 <div class="skill">
                                     <div class="skill-inner">
-                                        <img src="assets/images/laravel.png" alt="Laravel/PHP">
+                                        <img src="{{ asset('assets/images/laravel.png') }}" alt="Laravel/PHP">
                                         <h1 class="percent">70%</h1>
                                     </div>
                                     <p class="name">Laravel/PHP</p>
                                 </div>
                             </div>
+                            <div class="col-md-3 scroll-animation" data-animation="fade_from_bottom">
+                                <div class="skill">
+                                    <div class="skill-inner">
+                                        <img src="{{ asset('assets/images/sql.svg') }}" height="49" alt="Laravel/PHP">
+                                        <h1 class="percent">70%</h1>
+                                    </div>
+                                    <p class="name">MySql</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 scroll-animation" data-animation="fade_from_bottom">
+                                <div class="skill">
+                                    <div class="skill-inner">
+                                        <img src="{{ asset('assets/images/vue.png') }}" height="49" alt="Laravel/PHP">
+                                        <h1 class="percent">70%</h1>
+                                    </div>
+                                    <p class="name">Vue js</p>
+                                </div>
+                            </div>
+{{--                            <div class="col-md-3 scroll-animation" data-animation="fade_from_bottom">--}}
+{{--                                <div class="skill">--}}
+{{--                                    <div class="skill-inner">--}}
+{{--                                        <img src="{{ asset('assets/images/laravel.png') }}" alt="Laravel/PHP">--}}
+{{--                                        <h1 class="percent">70%</h1>--}}
+{{--                                    </div>--}}
+{{--                                    <p class="name">Git</p>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <div class="col-md-3 scroll-animation" data-animation="fade_from_bottom">--}}
+{{--                                <div class="skill">--}}
+{{--                                    <div class="skill-inner">--}}
+{{--                                        <img src="{{ asset('assets/images/laravel.png') }}" alt="Laravel/PHP">--}}
+{{--                                        <h1 class="percent">70%</h1>--}}
+{{--                                    </div>--}}
+{{--                                    <p class="name">Argil/Scrum Method</p>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
                         </div>
 
                     </div>
