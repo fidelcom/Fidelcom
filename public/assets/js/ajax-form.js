@@ -20,7 +20,7 @@
     //     } else {
     //         message.classList.remove('show');
     //     }
-        
+
     //     return valid;
     // }
 
@@ -43,13 +43,39 @@
             message.fadeOut();
         }, 3000);
     }
-    
+
+    // form.submit(function (e) {
+    //     e.preventDefault();
+    //
+    //
+    //     const message = document.getElementById('required-msg');
+    //
+    //     const fullName = document.getElementById("full-name");
+    //     const email = document.getElementById("email");
+    //     const subject = document.getElementById("subject");
+    //
+    //     if (!fullName.value || !email.value) {
+    //         message.classList.add('show');
+    //         fullName.classList.add("invalid");
+    //         console.log('false');
+    //         return false
+    //     }
+    //     message.classList.remove('show');
+    //
+    //     form_data = $(this).serialize();
+    //     $.ajax({
+    //         type: 'POST',
+    //         url: form.attr('action'),
+    //         data: form_data
+    //     })
+    //     .done(done_func)
+    //     .fail(fail_func);
+    // });
+
     form.submit(function (e) {
         e.preventDefault();
 
-        
         const message = document.getElementById('required-msg');
-
         const fullName = document.getElementById("full-name");
         const email = document.getElementById("email");
         const subject = document.getElementById("subject");
@@ -58,18 +84,22 @@
             message.classList.add('show');
             fullName.classList.add("invalid");
             console.log('false');
-            return false
+            return false;
         }
         message.classList.remove('show');
 
-        form_data = $(this).serialize();
+        // Use FormData instead of serialize()
+        let form_data = new FormData(this);
+
         $.ajax({
             type: 'POST',
             url: form.attr('action'),
-            data: form_data
-        })
-        .done(done_func)
-        .fail(fail_func);
+            data: form_data,
+            processData: false,  // Important for file upload
+            contentType: false,  // Important for file upload
+            success: done_func,
+            error: fail_func
+        });
     });
-    
+
 })(jQuery);

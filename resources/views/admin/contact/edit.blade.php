@@ -118,6 +118,21 @@
                                 </div>
                             </div>
                             <!-- end row -->
+                            <div class="row mb-3">
+                                <label for="example-text-input" class="col-sm-2 col-form-label">Office Github Link</label>
+                                <div class="col-sm-10">
+                                    <input class="form-control" type="url" name="github" placeholder="Github Link" value="{{ $data->github }}" id="example-text-input">
+                                </div>
+                            </div>
+                            <!-- end row -->
+
+                            <div class="row mb-3">
+                                <label for="example-text-input" class="col-sm-2 col-form-label">Office Dribble Link</label>
+                                <div class="col-sm-10">
+                                    <input class="form-control" type="url" name="dribble" placeholder="Dribble Link" value="{{ $data->dribble }}" id="example-text-input">
+                                </div>
+                            </div>
+                            <!-- end row -->
 
                             <div class="row mb-3">
                                 <label for="example-text-input" class="col-sm-2 col-form-label"></label>

@@ -58,6 +58,8 @@ class ProjectController extends Controller
             'year' => $request->year,
             'location' => $request->location,
             'image' => $filename,
+            'url' => $request->url,
+            'tag' => $request->tag,
         ]);
 
         if ($request->hasFile('multiImage'))
@@ -137,6 +139,8 @@ class ProjectController extends Controller
             'client' => $request->client,
             'year' => $request->year,
             'location' => $request->location,
+            'url' => $request->url,
+            'tag' => $request->tag,
         ]);
 
 

@@ -3,15 +3,17 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\ActiveContact;
 use App\Models\Contact;
 use Illuminate\Http\Request;
+use Illuminate\View\View;
 
 class AdminContactController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index() : View
     {
         $data = Contact::all();
         return view('admin.contact.index', compact('data'));
@@ -20,7 +22,7 @@ class AdminContactController extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
+    public function create() : View
     {
         return view('admin.contact.create');
     }
@@ -54,6 +56,8 @@ class AdminContactController extends Controller
             'google' => $request->google,
             'youtube' => $request->youtube,
             'pinterest' => $request->pinterest,
+            'github' => $request->github,
+            'dribble' => $request->dribble,
         ]);
 
         return redirect()->route('contact.index')->with([
@@ -109,6 +113,8 @@ class AdminContactController extends Controller
             'google' => $request->google,
             'youtube' => $request->youtube,
             'pinterest' => $request->pinterest,
+            'github' => $request->github,
+            'dribble' => $request->dribble,
         ]);
 
         return redirect()->route('contact.index')->with([

@@ -94,6 +94,20 @@
                             </div>
                             <!-- end row -->
                             <div class="row mb-3">
+                                <label for="example-text-input" class="col-sm-2 col-form-label">Url</label>
+                                <div class="col-sm-10">
+                                    <input class="form-control" type="text" name="url" placeholder="Project url" id="example-text-input">
+                                </div>
+                            </div>
+                            <!-- end row -->
+                            <div class="row mb-3">
+                                <label for="example-text-input" class="col-sm-2 col-form-label">Tags</label>
+                                <div class="col-sm-10">
+                                    <input class="form-control" type="text" name="tag" placeholder="Project tags" id="example-text-input">
+                                </div>
+                            </div>
+                            <!-- end row -->
+                            <div class="row mb-3">
                                 <label for="example-text-input" class="col-sm-2 col-form-label">Project Image</label>
                                 <div class="col-sm-10">
                                     <input class="form-control" type="file" name="image" id="example-text-input">
